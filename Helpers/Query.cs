@@ -17,10 +17,10 @@ public class BookQueryParameters
 
     }
 
-        public string SearchTerm { get; set; }
-        public string OrderBy { get; set; } = "Title";
-        public string Genre { get; set; }
-        public string Author { get; set; }
+        public string? SearchTerm { get; set; }
+        public string? OrderBy { get; set; }
+        public string? Genre { get; set; }
+        public string? Author { get; set; }
 
 
 }

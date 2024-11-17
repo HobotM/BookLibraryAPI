@@ -90,6 +90,12 @@ namespace BookLibraryAPI.Repositories
                     case "author_desc":
                         query = query.OrderByDescending(b => b.Author);
                         break;
+                    case "genre":
+                        query = query.OrderBy(b => b.Genre);
+                        break;
+                    case "genre_desc":
+                        query = query.OrderByDescending(b => b.Genre);
+                        break;
                     default:
                         query = query.OrderBy(b => b.Title);
                         break;
